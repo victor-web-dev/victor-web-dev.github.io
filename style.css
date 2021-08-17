@@ -53,12 +53,26 @@
 }
 
 .content{
-    height: 100vh; 
-    border: 3px solid red;
+    height: 90vh; 
+    /* border: 3px solid red; */
     background-color: gray;
 }
+
+#home {
+    background-color: #979b8d;
+    
+}
+/* --------- */
+
+/* Footer */
 
 /* --------- */
 
 
+/* Animation */
+
+
+
+
+/* --------- */
 
