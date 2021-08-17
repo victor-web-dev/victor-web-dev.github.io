@@ -54,14 +54,60 @@
 
 .content{
     height: 90vh; 
-    /* border: 3px solid red; */
+    border: 3px solid red;
     background-color: gray;
 }
 
 #home {
     background-color: #979b8d;
+    overflow: hidden;
     
 }
+
+#home section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20%;
+}
+
+#home section p {
+    font-size: 1.7rem;
+    color: #f4f4ff;
+    letter-spacing: 12px;
+    text-shadow: -10px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+#home section p:first-of-type {
+    animation-name: slide-left;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#home section p:last-of-type {
+    animation-name: slide-right;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#home section p span {
+    font-size: 3.5rem;
+    color: #b0413e;
+}
+
+#home section p a {
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #f4f4ff;
+}
+
+
+
+
+
 /* --------- */
 
 /* Footer */
@@ -71,8 +117,24 @@
 
 /* Animation */
 
+@keyframes slide-left {
+    from {
+        margin-left: -2000px;
+    }
 
+    to {
+        margin-left: 0;
+    }
+}
 
+@keyframes slide-right {
+    from {
+        margin-right: -2000px;
+    }
 
+    to {
+        margin-right: 0;
+    }
+}
 /* --------- */
 
