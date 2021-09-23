@@ -59,9 +59,8 @@
 }
 
 #home {
-    background-color: #979b8d;
+    background-color: #c5c7c0;
     overflow: hidden;
-    
 }
 
 #home section {
@@ -69,7 +68,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20%;
+    padding: 12%;
 }
 
 #home section p {
@@ -87,14 +86,14 @@
 
 #home section p:nth-of-type(2){
     animation-name: appear;
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-direction: alternate;
     
 }
 
 #home section p:nth-of-type(3) {
     animation-name: slide-right;
-    animation-duration: 4s;
+    animation-duration: 7s;
     animation-direction: alternate;
 }
 
@@ -135,7 +134,7 @@
 
 @keyframes slide-right {
     from {
-        margin-right: -2000px;
+        margin-right: -3000px;
     }
 
     to {
