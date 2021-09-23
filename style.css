@@ -111,7 +111,18 @@
     color: #648de5;
 }
 
+/* About Section */
 
+#about .self-tech-knowledge {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.knowledge-icons {
+    width: 50px;
+}
 
 /* --------- */
 
