@@ -24,63 +24,46 @@
   animation-direction: alternate;
 }
 
-#home section p:nth-of-type(2){
+#home section p:nth-of-type(2) {
   animation-name: appear;
-  animation-duration: 6s;
-  animation-direction: alternate;
-  
-}
-
-#home section p:nth-of-type(3) {
-  animation-name: slide-right;
   animation-duration: 7s;
   animation-direction: alternate;
 }
 
 #home section p span {
-  font-size: 3.5rem;
+  font-size: 5.5rem;
   color: #b0413e;
 }
-
-#home section p a {
-  font-size: 1.7rem;
-  text-decoration: none;
-  color: #f4f4ff;
-}
-#home section p a:hover {
-  color: #648de5;
-}
-
 
 /* Animation */
 
 @keyframes slide-left {
   from {
-      margin-left: -2000px;
+    margin-left: -2000px;
   }
 
   to {
-      margin-left: 0;
+    margin-left: 0;
   }
 }
 
 @keyframes slide-right {
   from {
-      margin-right: -3000px;
+    margin-right: -3000px;
   }
 
   to {
-      margin-right: 0;
+    margin-right: 0;
   }
 }
 
 @keyframes appear {
   from {
-      opacity: 0%;
+    opacity: 0%;
   }
 
   to {
-      opacity: 100%;
+    opacity: 100%;
   }
 }
 /* --------- */

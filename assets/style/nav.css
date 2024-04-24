@@ -1,12 +1,12 @@
-.navigator{
-  background-color: #393E41;
+.navigator {
+  background-color: #393e41;
   font-size: 1em;
   min-width: 100vw;
   height: 10vh;
-  text-align:center;
+  text-align: center;
 }
 
-.navigator ul{
+.navigator ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -19,17 +19,17 @@
   margin-right: 30px;
 }
 
-.navigator ul li a{
- text-decoration: none;
- color: #f5f6fa;
- padding: 10px;
- transition: all 0.5s;
+.navigator ul li a {
+  text-decoration: none;
+  color: #f5f6fa;
+  padding: 10px;
+  transition: all 0.5s;
 }
 
-.navigator ul li a:hover{
-  color: #B0413E;
+.navigator ul li a:hover {
+  color: #b0413e;
 }
 
-.navigator ul li a:focus{
-  box-shadow: 0px 0px 5px 2px rgba(151,155,141,0.30) inset;
+.navigator ul li a:focus {
+  box-shadow: 0px 0px 5px 2px rgba(151, 155, 141, 0.3) inset;
 }
