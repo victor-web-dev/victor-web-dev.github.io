@@ -1,6 +1,9 @@
 #home {
   background-color: #c5c7c0;
   overflow: hidden;
+  background-image: url(../gif/gif-background.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #home section {
@@ -9,6 +12,8 @@
   align-items: center;
   justify-content: center;
   padding: 12%;
+  height: 100vh;
+  background: rgba(34, 34, 34, 0.7); /* removes background focus */
 }
 
 #home section p {
@@ -31,10 +36,13 @@
 }
 
 #home section p span {
-  font-size: 5.5rem;
+  font-size: 4.5rem;
   color: #b0413e;
 }
 
+/* #fancy-bg {
+  width: 100vw;
+} */
 /* Animation */
 
 @keyframes slide-left {
