@@ -13,7 +13,7 @@
   justify-content: center;
   padding: 12%;
   height: 100vh;
-  background: rgba(34, 34, 34, 0.7); /* removes background focus */
+  background: rgba(34, 34, 34, 0.6); /* removes background focus */
 }
 
 #home section p {
@@ -38,6 +38,38 @@
 #home section p span {
   font-size: 4.5rem;
   color: #b0413e;
+}
+
+#home section button {
+  border-radius: 10px;
+  margin-top: 15px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid #b0413e;
+  padding: 15px 50px;
+  animation-name: appear;
+  animation-duration: 7s;
+  animation-direction: alternate;
+  transition: background 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#home section button:hover {
+  background-color: #b0413e;
+  border-color: white;
+}
+
+.main-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-btn span {
+  color: white;
+  position: relative;
+  top: 10px;
 }
 
 /* Animation */
