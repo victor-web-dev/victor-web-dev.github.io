@@ -21,12 +21,18 @@
   <body>
     <header>
       <nav class="navigator" aria-label="Header Navigation">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+          <section class="burguer-menu">
+            <input type="checkbox" id="menu-checkbox" checked>
+            <span class="lines" id="line1"></span>
+            <span class="lines" id="line2"></span>
+            <span class="lines" id="line3"></span>
+          </section>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+          </ul>
       </nav>
     </header>
 
@@ -37,9 +43,15 @@
             <p><span>Hello!</span>I'm Victor;</p>
             <p>Web <span>Developer;</span></p>
             <div class="main-btn">
-              <a href="https://www.linkedin.com/in/veofa/" target="_blank"><button>Linkedin</button></a>
-              <span>OR</span>
-              <a href="./assets/data/Resume-for-internet.pdf" download="resume"><button>Download CV</button></a>
+              <a href="https://www.linkedin.com/in/veofa/" target="_blank">
+                <button class="linkedin-btn">
+                  LinkedIn
+                </button>
+              </a>
+              <!-- <span>OR</span> -->
+              <a href="./assets/data/Resume-for-internet.pdf" download="resume">
+                <button>Download CV</button>
+              </a>
             </div>
           </section>
         </article>
