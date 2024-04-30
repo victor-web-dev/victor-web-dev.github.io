@@ -1,0 +1,14 @@
+main section {
+  height: 100vh;
+}
+
+main section:nth-child(1) {
+  background-color: azure;
+}
+main section:nth-child(2) {
+  background-color: yellowgreen;
+}
+
+main section:nth-child(3) {
+  background-color: red;
+}
