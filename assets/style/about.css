@@ -3,7 +3,15 @@ main section {
 }
 
 main section:nth-child(1) {
-  background-color: azure;
+  background-image: url(../data/wave-bg.jpg);
+  background-repeat: repeat-x;
+  background-size: contain;
+  transition: all ease-in-out;
+  animation-name: moving-bg;
+  animation-duration: 240s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: linear;
 }
 main section:nth-child(2) {
   background-color: yellowgreen;
@@ -11,4 +19,39 @@ main section:nth-child(2) {
 
 main section:nth-child(3) {
   background-color: red;
+}
+
+.briefing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.briefing article {
+  padding: 30%;
+  /* color: #b0413e; */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.briefing article p {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575,
+    1px 5px 15px #b0413e, 1px 5px 70px #b0413e, 1px 5px 15px #b0413e;
+}
+
+.briefing article p:nth-child(2) {
+  padding: 20px 0;
+}
+
+/* Animation */
+
+@keyframes moving-bg {
+  100% {
+    background-position-x: -20000px;
+    filter: hue-rotate(720deg);
+  }
 }
