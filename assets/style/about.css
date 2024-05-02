@@ -1,8 +1,8 @@
-main section {
+main > section {
   height: 100vh;
 }
 
-main section:nth-child(1) {
+main > section:nth-child(1) {
   background-image: url(../data/wave-bg.jpg);
   background-repeat: repeat-x;
   background-size: cover;
@@ -13,11 +13,11 @@ main section:nth-child(1) {
   animation-direction: alternate-reverse;
   animation-timing-function: linear;
 }
-main section:nth-child(2) {
+main > section:nth-child(2) {
   background-color: rgba(30, 39, 46, 1);
 }
 
-main section:nth-child(3) {
+main > section:nth-child(3) {
   background-color: red;
 }
 
@@ -34,6 +34,7 @@ main section:nth-child(3) {
   /* color: #b0413e; */
   color: white;
   background-color: rgba(0, 0, 0, 0.65);
+  flex-basis: fit-content;
 }
 
 .briefing article p {
@@ -52,10 +53,16 @@ main section:nth-child(3) {
 
 @keyframes moving-bg {
   100% {
-    background-position-y: -150px;
     background-position-x: -20000px;
     filter: hue-rotate(720deg);
   }
 }
 
 /* section 2 */
+
+.technologies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
