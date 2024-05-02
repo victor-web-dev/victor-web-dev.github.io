@@ -5,7 +5,7 @@ main section {
 main section:nth-child(1) {
   background-image: url(../data/wave-bg.jpg);
   background-repeat: repeat-x;
-  background-size: contain;
+  background-size: cover;
   transition: all ease-in-out;
   animation-name: moving-bg;
   animation-duration: 240s;
@@ -14,7 +14,7 @@ main section:nth-child(1) {
   animation-timing-function: linear;
 }
 main section:nth-child(2) {
-  background-color: yellowgreen;
+  background-color: rgba(30, 39, 46, 1);
 }
 
 main section:nth-child(3) {
@@ -26,13 +26,14 @@ main section:nth-child(3) {
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 
 .briefing article {
   padding: 30%;
   /* color: #b0413e; */
   color: white;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 .briefing article p {
@@ -51,7 +52,10 @@ main section:nth-child(3) {
 
 @keyframes moving-bg {
   100% {
+    background-position-y: -150px;
     background-position-x: -20000px;
     filter: hue-rotate(720deg);
   }
 }
+
+/* section 2 */
