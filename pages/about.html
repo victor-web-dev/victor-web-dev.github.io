@@ -12,54 +12,59 @@
     <link rel="stylesheet" href="../assets/style/base-style.css" />
     <link rel="stylesheet" href="../assets/style/nav.css" />
     <link rel="stylesheet" href="../assets/style/about.css" />
-    <script type="text/javascript" src="../main.js" defer></script>
+    <script type="module" src="../main.js" defer></script>
     <title>Victor Araujo - About</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
-    </style>
+      @import url("https://fonts.googleapis.com/css2?family=Jersey+20&display=swap");
     </style>
   </head>
   <body>
     <header>
       <nav class="navigator" aria-label="Header Navigation">
-          <section class="burguer-menu">
-            <input type="checkbox" class="menu-checkbox" checked="true">
-            <span class="lines" id="line1"></span>
-            <span class="lines" id="line2"></span>
-            <span class="lines" id="line3"></span>
-          </section>
-          <ul class="nav-list">
-            <li class="nav-item"><a href="../index.html">Home</a></li>
-            <li class="nav-item"><a href="#about">About</a></li>
-            <li class="nav-item"><a href="#projects">Projects</a></li>
-            <li class="nav-item"><a href="#contact">Contact</a></li>
-          </ul>
+        <section class="burguer-menu">
+          <input type="checkbox" class="menu-checkbox" checked="true" />
+          <span class="lines" id="line1"></span>
+          <span class="lines" id="line2"></span>
+          <span class="lines" id="line3"></span>
+        </section>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="../index.html">Home</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
-        <section class="briefing" aria-label="small briefing">
-          <article>
-            <p>Into software development since 2015, got into Web development in 2021. </p>
-            <p>Always passionate about I.T</p>
-            <p>A flexible person who can adapt and learn new tools to solve problems.</p>
-          </article>
-        </section>
-        <section class="technologies" aria-label="technologies">
-          <article>
-            <h2>Technologies</h2>
-            <section aria-label="Most used section">
-              <h3>Most used</h3>
-              <div></div>
-            </section>
-            <hr>
-            <section aria-label="Less used - Known section">
-              <h3>Less used - Known</h3>
-              <div></div>
-            </section>
-          </article>
-        </section>
-        <section aria-label="transferable-skills"></section>
+      <section class="briefing" aria-label="small briefing">
+        <article>
+          <p>
+            Into software development since 2015, got into Web development in
+            2021.
+          </p>
+          <p>Always passionate about I.T</p>
+          <p>
+            A flexible person who can adapt and learn new tools to solve
+            problems.
+          </p>
+        </article>
+      </section>
+      <section class="technologies" aria-label="technologies">
+        <article>
+          <h2>Technologies</h2>
+          <section aria-label="Most used section">
+            <h3>Most used</h3>
+            <div id="most-used-tech"></div>
+          </section>
+          <hr />
+          <section aria-label="Less used - Known section">
+            <h3>Less used - Known</h3>
+            <div id="less-used-tech"></div>
+          </section>
+        </article>
+      </section>
+      <section aria-label="transferable-skills"></section>
     </main>
 
     <footer></footer>
