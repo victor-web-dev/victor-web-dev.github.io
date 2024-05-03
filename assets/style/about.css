@@ -66,3 +66,8 @@ main > section:nth-child(3) {
   justify-content: center;
   color: white;
 }
+
+.technologies .logo {
+  height: 50px;
+  width: 50px;
+}
