@@ -1,5 +1,8 @@
 // const { MostUsedIcons: usedIcons } = require("./assets/data/icons-list");
-import { MostUsedIcons as usedIcons } from "./assets/data/icons-list.js";
+import {
+  mostUsedIcons as usedIcons,
+  lessUsedIcons,
+} from "./assets/data/icons-list.js";
 
 const navBtnClick = () => {
   const checkbox = document.querySelector(".menu-checkbox");
@@ -18,9 +21,15 @@ const navBtnClick = () => {
 
 const fillUpTechDiv = () => {
   const mostDiv = document.getElementById("most-used-tech");
-  // const lessDiv = document.getElementById("less-used-tech");
+  const lessDiv = document.getElementById("less-used-tech");
   usedIcons.forEach((el) => {
     mostDiv.innerHTML += `
+    <img class="logo" src="${el.src}" title="${el.title}" alt="${el.alt}"/>
+    `;
+  });
+
+  lessUsedIcons.forEach((el) => {
+    lessDiv.innerHTML += `
     <img class="logo" src="${el.src}" title="${el.title}" alt="${el.alt}"/>
     `;
   });
