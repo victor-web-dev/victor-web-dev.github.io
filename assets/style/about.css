@@ -65,9 +65,40 @@ main > section:nth-child(3) {
   align-items: center;
   justify-content: center;
   color: white;
+  background-image: url(../data/tech-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .technologies .logo {
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
+  transition: width 0.2s ease-in-out;
+}
+
+.technologies .logo:hover {
+  filter: grayscale(100%);
+}
+
+.technologies > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.technologies > article h2 {
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575,
+    1px 5px 15px #b0413e, 1px 5px 70px #b0413e, 1px 5px 15px #b0413e;
+}
+
+.technologies > article h3 {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575,
+    1px 5px 15px #b0413e, 1px 5px 70px #b0413e, 1px 5px 15px #b0413e;
 }
