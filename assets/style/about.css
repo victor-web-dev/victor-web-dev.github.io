@@ -15,10 +15,16 @@ main > section:nth-child(1) {
 }
 main > section:nth-child(2) {
   background-color: rgba(30, 39, 46, 1);
+  background-image: url(../data/tech-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main > section:nth-child(3) {
-  background-color: red;
+  background-color: black;
+  background-image: url(../data/tech-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .briefing {
@@ -65,9 +71,6 @@ main > section:nth-child(3) {
   align-items: center;
   justify-content: center;
   color: white;
-  background-image: url(../data/tech-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .technologies .logo {
@@ -101,4 +104,67 @@ main > section:nth-child(3) {
   font-size: 1.2rem;
   text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575,
     1px 5px 15px #b0413e, 1px 5px 70px #b0413e, 1px 5px 15px #b0413e;
+}
+
+/* Section 3 */
+
+.transferable-skills,
+.transferable-skills-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575,
+    1px 5px 15px #b0413e, 1px 5px 70px #b0413e, 1px 5px 15px #b0413e;
+}
+.transferable-skills > article {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.transferable-skills h2 {
+  font-size: 2rem;
+}
+
+.transferable-skills ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50%;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  list-style-image: url(../gif/poring-ragnarok.gif);
+}
+
+.transferable-skills ul li {
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.transferable-skills ul li:nth-child(1) {
+  list-style-image: url(../gif/arc-angeling-ragnarok.gif);
+}
+
+.transferable-skills ul li:nth-child(3) {
+  list-style-image: url(../gif/ragnarok-jejeling.gif);
+}
+
+.transferable-skills ul li:nth-child(4) {
+  list-style-image: url(../gif/deviling-ragnarok.gif);
+}
+
+.transferable-skills ul li:nth-child(5) {
+  list-style-image: url(../gif/angeling-ragnarok.gif);
+}
+
+.transferable-skills ul li:nth-child(6) {
+  list-style-image: url(../gif/ghostring-ragnarok.gif);
+}
+
+.transferable-skills ul li:nth-child(7) {
+  list-style-image: url(../gif/santa-poring-ragnarok.gif);
 }
