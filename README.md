@@ -5,13 +5,19 @@
 
 <details>
     <summary>Credits</summary>
-- I used this (Website)[https://designshack.net/articles/inspiration/personal-portfolio-websites/] to find inspirations on other portifolios.
+I used this website to find inspirations on other portifolios.
+<br />
+- https://designshack.net/articles/inspiration/personal-portfolio-websites/
 
-- Assets were taken in these websites:
-https://wallpaperaccess.com/pixel-art-gif
-https://www.freepik.com
-Google fonts
-https://tenor.com/en-CA/
+<br />
+
+#### Assets were taken in these websites:
+- https://wallpaperaccess.com/pixel-art-gif
+- https://www.freepik.com
+- Google fonts
+- https://tenor.com/en-CA/
+
+
 </details>
 
 Made by Victor
