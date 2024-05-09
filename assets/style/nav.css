@@ -30,7 +30,6 @@
   color: #f5f6fa;
   text-transform: uppercase;
   padding: 10px;
-
   position: relative;
 }
 
@@ -42,6 +41,7 @@
 /* if the navigator link doesn't keep the effect, remember to delete lines 41 & 42 */
 .navigator ul li:hover,
 .navigator ul li a:link,
+.navigator ul li a:visited,
 .navigator ul li a:active {
   transition: 1s ease-in-out;
   animation: float 1s ease-in-out infinite;

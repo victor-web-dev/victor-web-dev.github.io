@@ -26,6 +26,7 @@
 }
 
 .github-item {
+  display: block;
   text-decoration: none;
   color: black;
   border: 1px solid black;
