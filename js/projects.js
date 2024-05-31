@@ -17,7 +17,7 @@ const getGithubRepo = async () => {
 };
 
 const fillContainer = async () => {
-  const div = document.getElementById("items-container");
+  const div = document.getElementById("project-items-container");
   const github = await getGithubRepo();
 
   if (!github) {

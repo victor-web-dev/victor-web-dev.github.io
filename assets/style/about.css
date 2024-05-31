@@ -1,8 +1,8 @@
-main > section {
+#about-section > section {
   height: 100vh;
 }
 
-main > section:nth-child(1) {
+#about-section > section:nth-child(1) {
   background-image: url(../data/wave-bg.jpg);
   background-repeat: repeat-x;
   background-size: cover;
@@ -13,21 +13,21 @@ main > section:nth-child(1) {
   animation-direction: alternate-reverse;
   animation-timing-function: linear;
 }
-main > section:nth-child(2) {
+#about-section > section:nth-child(2) {
   background-color: rgba(30, 39, 46, 1);
   background-image: url(../data/tech-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-main > section:nth-child(3) {
+#about-section > section:nth-child(3) {
   background-color: black;
   background-image: url(../data/tech-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.briefing {
+#about-section .briefing {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,7 @@ main > section:nth-child(3) {
   overflow: hidden;
 }
 
-.briefing article {
+#about-section .briefing article {
   padding: 30%;
   /* color: #b0413e; */
   color: white;
@@ -43,7 +43,7 @@ main > section:nth-child(3) {
   flex-basis: fit-content;
 }
 
-.briefing article p {
+#about-section .briefing article p {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -51,7 +51,7 @@ main > section:nth-child(3) {
     1px 5px 15px #b0413e, 1px 5px 70px #b0413e, 1px 5px 15px #b0413e;
 }
 
-.briefing article p:nth-child(2) {
+#about-section .briefing article p:nth-child(2) {
   padding: 20px 0;
 }
 
@@ -66,24 +66,24 @@ main > section:nth-child(3) {
 
 /* section 2 */
 
-.technologies {
+#about-section .technologies {
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
 }
 
-.technologies .logo {
+#about-section .technologies .logo {
   height: 100px;
   width: 100px;
   transition: width 0.2s ease-in-out;
 }
 
-.technologies .logo:hover {
+#about-section .technologies .logo:hover {
   filter: grayscale(100%);
 }
 
-.technologies > article {
+#about-section .technologies > article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,13 +94,13 @@ main > section:nth-child(3) {
   background-color: rgba(0, 0, 0, 0.65);
 }
 
-.technologies > article h2 {
+#about-section .technologies > article h2 {
   font-size: 2rem;
   text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575,
     1px 5px 15px #b0413e, 1px 5px 70px #b0413e, 1px 5px 15px #b0413e;
 }
 
-.technologies > article h3 {
+#about-section .technologies > article h3 {
   font-size: 1.2rem;
   text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575,
     1px 5px 15px #b0413e, 1px 5px 70px #b0413e, 1px 5px 15px #b0413e;
@@ -108,8 +108,8 @@ main > section:nth-child(3) {
 
 /* Section 3 */
 
-.transferable-skills,
-.transferable-skills-article {
+#about-section .transferable-skills,
+#about-section .transferable-skills-article {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -118,17 +118,17 @@ main > section:nth-child(3) {
   text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575,
     1px 5px 15px #b0413e, 1px 5px 70px #b0413e, 1px 5px 15px #b0413e;
 }
-.transferable-skills > article {
+#about-section .transferable-skills > article {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.85);
 }
 
-.transferable-skills h2 {
+#about-section .transferable-skills h2 {
   font-size: 2rem;
 }
 
-.transferable-skills ul {
+#about-section .transferable-skills ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -140,31 +140,31 @@ main > section:nth-child(3) {
   list-style-image: url(../gif/poring-ragnarok.gif);
 }
 
-.transferable-skills ul li {
+#about-section .transferable-skills ul li {
   font-size: 1.5rem;
   padding: 20px;
 }
 
-.transferable-skills ul li:nth-child(1) {
+#about-section .transferable-skills ul li:nth-child(1) {
   list-style-image: url(../gif/arc-angeling-ragnarok.gif);
 }
 
-.transferable-skills ul li:nth-child(3) {
+#about-section .transferable-skills ul li:nth-child(3) {
   list-style-image: url(../gif/ragnarok-jejeling.gif);
 }
 
-.transferable-skills ul li:nth-child(4) {
+#about-section .transferable-skills ul li:nth-child(4) {
   list-style-image: url(../gif/deviling-ragnarok.gif);
 }
 
-.transferable-skills ul li:nth-child(5) {
+#about-section .transferable-skills ul li:nth-child(5) {
   list-style-image: url(../gif/angeling-ragnarok.gif);
 }
 
-.transferable-skills ul li:nth-child(6) {
+#about-section .transferable-skills ul li:nth-child(6) {
   list-style-image: url(../gif/ghostring-ragnarok.gif);
 }
 
-.transferable-skills ul li:nth-child(7) {
+#about-section .transferable-skills ul li:nth-child(7) {
   list-style-image: url(../gif/santa-poring-ragnarok.gif);
 }

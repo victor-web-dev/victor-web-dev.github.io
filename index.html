@@ -12,7 +12,14 @@
     <link rel="stylesheet" href="./assets/style/base-style.css" />
     <link rel="stylesheet" href="./assets/style/nav.css" />
     <link rel="stylesheet" href="./assets/style/home.css" />
-    <script type="text/javascript" src="./main.js" defer></script>
+    <link rel="stylesheet" href="./assets/style/about.css" />
+    <link rel="stylesheet" href="./assets/style/projects.css" />
+    <link rel="stylesheet" href="./assets/style/contact.css" />
+
+    <script type="module" src="./main.js" defer></script>
+    <script type="module" src="./js/about.js" defer></script>
+    <script type="module" src="./js/projects.js" defer></script>
+
     <title>Victor Araujo - Portfolio</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Jersey+20&display=swap");
@@ -29,9 +36,9 @@
         </section>
         <ul class="nav-list">
           <li class="nav-item"><a href="#home">Home</a></li>
-          <li class="nav-item"><a href="./pages/about.html">About</a></li>
-          <li class="nav-item"><a href="./pages/projects.html">Projects</a></li>
-          <li class="nav-item"><a href="./pages/contact.html">Contact</a></li>
+          <li class="nav-item"><a href="#about-section">About</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -54,9 +61,114 @@
           </section>
         </article>
       </section>
-      <!-- <section class="content" id="about"></section>
-      <section class="content" id="projects"></section>
-      <section class="content" id="contact"></section> -->
+      <!-- about  -->
+      <section id="about-section">
+        <section class="briefing" aria-label="small briefing">
+          <article>
+            <p>
+              Into software development since 2015, got into Web development in
+              2021.
+            </p>
+            <p>Always passionate about I.T</p>
+            <p>
+              A flexible person who can adapt and learn new tools to solve
+              problems.
+            </p>
+          </article>
+        </section>
+        <section class="technologies" aria-label="technologies">
+          <article>
+            <h2>Technologies</h2>
+            <section aria-label="Most used section">
+              <h3>Most used</h3>
+              <div id="most-used-tech"></div>
+            </section>
+            <hr />
+            <section aria-label="Less used - Known section">
+              <h3>Less used - Known</h3>
+              <div id="less-used-tech"></div>
+            </section>
+          </article>
+        </section>
+        <section class="transferable-skills" aria-label="transferable-skills">
+          <article class="transferable-skills-article">
+            <div>
+              <h2>Transferable Skills</h2>
+            </div>
+
+            <div>
+              <ul>
+                <li>Calm</li>
+                <li>Flexible</li>
+                <li>Cooperative</li>
+                <li>Rational</li>
+                <li>Open-Minded</li>
+                <li>Exploring</li>
+                <li>Pratical</li>
+              </ul>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <!-- projects -->
+
+      <section class="projects" id="projects">
+        <h1>Projects</h1>
+        <div id="project-items-container"></div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact" id="contact">
+        <form
+          class="contact-form"
+          action="mailto:victoremanuel122@gmail.com"
+          enctype="text/plain"
+          method="get"
+        >
+          <div>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="subject"
+              id="name"
+              placeholder="John"
+              required
+            />
+          </div>
+          <div>
+            <label for="lastName">Last name</label>
+            <input
+              type="text"
+              name="subject"
+              id="lastName"
+              placeholder="Doe"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@email.com"
+              required
+            />
+          </div>
+          <div>
+            <textarea
+              name="body"
+              id=""
+              placeholder="Message me!"
+              required
+            ></textarea>
+          </div>
+          <div>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer style="display: none"></footer>
