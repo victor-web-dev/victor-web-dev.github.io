@@ -16,8 +16,12 @@
   /* overflow-y:scroll; */
 }
 
-.content {
+/* .content {
   height: 100vh;
-  /* border: 3px solid red; */
+  border: 3px solid red;
   background-color: gray;
+} */
+
+.fp-section {
+  height: auto !important;
 }
