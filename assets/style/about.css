@@ -1,8 +1,4 @@
-#about-section > section {
-  height: 100vh;
-}
-
-#about-section > section:nth-child(1) {
+#about-section div > section {
   background-image: url(../data/wave-bg.jpg);
   background-repeat: repeat-x;
   background-size: cover;
@@ -13,19 +9,19 @@
   animation-direction: alternate-reverse;
   animation-timing-function: linear;
 }
-#about-section > section:nth-child(2) {
+/* #about-section div > section:nth-child(2) {
   background-color: rgba(30, 39, 46, 1);
   background-image: url(../data/tech-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
-#about-section > section:nth-child(3) {
+/* #about-section div > section:nth-child(3) {
   background-color: black;
   background-image: url(../data/tech-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 #about-section .briefing {
   display: flex;
@@ -33,6 +29,7 @@
   align-items: center;
   text-align: center;
   overflow: hidden;
+  height: 100vh;
 }
 
 #about-section .briefing article {
@@ -41,6 +38,11 @@
   color: white;
   background-color: rgba(0, 0, 0, 0.65);
   flex-basis: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #about-section .briefing article p {
@@ -60,7 +62,7 @@
 @keyframes moving-bg {
   100% {
     background-position-x: -20000px;
-    filter: hue-rotate(720deg);
+    /* filter: hue-rotate(720deg); */
   }
 }
 
@@ -71,6 +73,7 @@
   align-items: center;
   justify-content: center;
   color: white;
+  height: 100vh;
 }
 
 #about-section .technologies .logo {
@@ -87,7 +90,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 100%;
   width: 100%;
   flex-wrap: wrap;
@@ -108,6 +111,10 @@
 
 /* Section 3 */
 
+#about-section .transferable-skills {
+  height: 100vh;
+}
+
 #about-section .transferable-skills,
 #about-section .transferable-skills-article {
   display: flex;
@@ -121,7 +128,7 @@
 #about-section .transferable-skills > article {
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 #about-section .transferable-skills h2 {
@@ -133,7 +140,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 50%;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
