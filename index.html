@@ -15,7 +15,28 @@
     <link rel="stylesheet" href="./assets/style/about.css" />
     <link rel="stylesheet" href="./assets/style/projects.css" />
     <link rel="stylesheet" href="./assets/style/contact.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css"
+      integrity="sha512-i5IHYtHBVvbgT6M4ltVKNqF7fh/MTVfGh3ilW1gxxgmlMocsl8aYz28aF0Iph+ceUpun06UW9CpExog9qXqFKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"
+      integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.extensions.min.js"
+      integrity="sha512-fOlK0nmiY4Q7hrlnFMgmEiXBzCaDtIWFLCjPNwb5YN0PqcpburbfkSJ2UL+rcfdslRbNlDeml6t1Se9WLmRKjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
     <script type="module" src="./main.js" defer></script>
     <script type="module" src="./js/about.js" defer></script>
     <script type="module" src="./js/projects.js" defer></script>
@@ -34,141 +55,168 @@
           <span class="lines" id="line2"></span>
           <span class="lines" id="line3"></span>
         </section>
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#home">Home</a></li>
-          <li class="nav-item"><a href="#about-section">About</a></li>
-          <li class="nav-item"><a href="#projects">Projects</a></li>
-          <li class="nav-item"><a href="#contact">Contact</a></li>
+        <ul class="nav-list" id="menu">
+          <li data-menuanchor="homePage" class="nav-item">
+            <a href="#home">Home</a>
+          </li>
+          <li data-menuanchor="aboutPage" class="nav-item">
+            <a href="#about-section">About</a>
+          </li>
+          <li data-menuanchor="projectsPage" class="nav-item">
+            <a href="#projects">Projects</a>
+          </li>
+          <li data-menuanchor="contactPage" class="nav-item">
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main class="main-content">
-      <section class="content" id="home">
-        <article>
-          <section>
-            <p><span>Hello!</span>I'm Victor;</p>
-            <p>Web <span>Developer;</span></p>
-            <div class="main-btn">
-              <a href="https://www.linkedin.com/in/veofa/" target="_blank">
-                <button class="linkedin-btn">LinkedIn</button>
-              </a>
-              <!-- <span>OR</span> -->
-              <a href="./assets/data/Resume-for-internet.pdf" download="resume">
-                <button>Download CV</button>
-              </a>
+      <div id="fullpage">
+        <div class="section active">
+          <section class="" id="home">
+            <article>
+              <section>
+                <p><span>Hello!</span>I'm Victor;</p>
+                <p>Web <span>Developer;</span></p>
+                <div class="main-btn">
+                  <a href="https://www.linkedin.com/in/veofa/" target="_blank">
+                    <button class="linkedin-btn">LinkedIn</button>
+                  </a>
+                  <!-- <span>OR</span> -->
+                  <a
+                    href="./assets/data/Resume-for-internet.pdf"
+                    download="resume"
+                  >
+                    <button>Download CV</button>
+                  </a>
+                </div>
+              </section>
+            </article>
+          </section>
+        </div>
+        <!-- about  -->
+        <div class="section">
+          <section id="about-section">
+            <div class="slide" data-anchor="slide1">
+              <section class="briefing" aria-label="small briefing">
+                <article>
+                  <p>
+                    Into software development since 2015, got into Web
+                    development in 2021.
+                  </p>
+                  <p>Always passionate about I.T</p>
+                  <p>
+                    A flexible person who can adapt and learn new tools to solve
+                    problems.
+                  </p>
+                </article>
+              </section>
+            </div>
+            <div class="slide" data-anchor="slide2">
+              <section class="technologies" aria-label="technologies">
+                <article>
+                  <h2>Technologies</h2>
+                  <section aria-label="Most used section">
+                    <h3>Most used</h3>
+                    <div id="most-used-tech"></div>
+                  </section>
+                  <hr />
+                  <section aria-label="Less used - Known section">
+                    <h3>Less used - Known</h3>
+                    <div id="less-used-tech"></div>
+                  </section>
+                </article>
+              </section>
+            </div>
+            <div class="slide" data-anchor="slide3">
+              <section
+                class="transferable-skills"
+                aria-label="transferable-skills"
+              >
+                <article class="transferable-skills-article">
+                  <div>
+                    <h2>Transferable Skills</h2>
+                  </div>
+
+                  <div>
+                    <ul>
+                      <li>Calm</li>
+                      <li>Flexible</li>
+                      <li>Cooperative</li>
+                      <li>Rational</li>
+                      <li>Open-Minded</li>
+                      <li>Exploring</li>
+                      <li>Pratical</li>
+                    </ul>
+                  </div>
+                </article>
+              </section>
             </div>
           </section>
-        </article>
-      </section>
-      <!-- about  -->
-      <section id="about-section">
-        <section class="briefing" aria-label="small briefing">
-          <article>
-            <p>
-              Into software development since 2015, got into Web development in
-              2021.
-            </p>
-            <p>Always passionate about I.T</p>
-            <p>
-              A flexible person who can adapt and learn new tools to solve
-              problems.
-            </p>
-          </article>
-        </section>
-        <section class="technologies" aria-label="technologies">
-          <article>
-            <h2>Technologies</h2>
-            <section aria-label="Most used section">
-              <h3>Most used</h3>
-              <div id="most-used-tech"></div>
-            </section>
-            <hr />
-            <section aria-label="Less used - Known section">
-              <h3>Less used - Known</h3>
-              <div id="less-used-tech"></div>
-            </section>
-          </article>
-        </section>
-        <section class="transferable-skills" aria-label="transferable-skills">
-          <article class="transferable-skills-article">
-            <div>
-              <h2>Transferable Skills</h2>
-            </div>
-
-            <div>
-              <ul>
-                <li>Calm</li>
-                <li>Flexible</li>
-                <li>Cooperative</li>
-                <li>Rational</li>
-                <li>Open-Minded</li>
-                <li>Exploring</li>
-                <li>Pratical</li>
-              </ul>
-            </div>
-          </article>
-        </section>
-      </section>
-
-      <!-- projects -->
-
-      <section class="projects" id="projects">
-        <h1>Projects</h1>
-        <div id="project-items-container"></div>
-      </section>
-
-      <!-- contact -->
-      <section class="contact" id="contact">
-        <form
-          class="contact-form"
-          action="mailto:victoremanuel122@gmail.com"
-          enctype="text/plain"
-          method="get"
-        >
-          <div>
-            <label for="name">Name</label>
-            <input
-              type="text"
-              name="subject"
-              id="name"
-              placeholder="John"
-              required
-            />
-          </div>
-          <div>
-            <label for="lastName">Last name</label>
-            <input
-              type="text"
-              name="subject"
-              id="lastName"
-              placeholder="Doe"
-              required
-            />
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="email@email.com"
-              required
-            />
-          </div>
-          <div>
-            <textarea
-              name="body"
-              id=""
-              placeholder="Message me!"
-              required
-            ></textarea>
-          </div>
-          <div>
-            <button type="submit">Send</button>
-          </div>
-        </form>
-      </section>
+        </div>
+        <!-- projects -->
+        <div class="section">
+          <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div id="project-items-container"></div>
+          </section>
+        </div>
+        <!-- contact -->
+        <div class="section">
+          <section class="contact" id="contact">
+            <form
+              class="contact-form"
+              action="mailto:victoremanuel122@gmail.com"
+              enctype="text/plain"
+              method="get"
+            >
+              <div>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  name="subject"
+                  id="name"
+                  placeholder="John"
+                  required
+                />
+              </div>
+              <div>
+                <label for="lastName">Last name</label>
+                <input
+                  type="text"
+                  name="subject"
+                  id="lastName"
+                  placeholder="Doe"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="email@email.com"
+                  required
+                />
+              </div>
+              <div>
+                <textarea
+                  name="body"
+                  id=""
+                  placeholder="Message me!"
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
     </main>
 
     <footer style="display: none"></footer>
