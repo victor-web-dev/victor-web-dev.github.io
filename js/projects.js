@@ -28,7 +28,7 @@ const fillContainer = async () => {
     github.data.forEach((el) => {
       div.innerHTML += `<a class="github-item" href="${el.html_url}">
         <div>
-            <h2>${el.name}</h2>
+            <h3>${el.name}</h3>
         </div>
         <div>
             <p>Language: ${el.language}</p>
