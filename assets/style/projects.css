@@ -2,10 +2,10 @@
   height: 100vh;
   background-image: url(../data/mac-bg1.jpg);
   background-size: cover;
-  /* background-position: 100% 50%; */
+  background-position: 100% 100%;
 }
 
-.projects h1 {
+.projects h2 {
   padding: 30px 50px;
   font-size: 3rem;
   text-align: center;
@@ -17,7 +17,7 @@
   align-items: center;
   flex-wrap: wrap;
   overflow-y: scroll;
-  height: 80vh;
+  height: 50vh;
   width: 70vw;
   margin: 0 auto;
   margin-top: 10px;
@@ -40,7 +40,7 @@
   background-color: white;
 }
 
-.github-item h2 {
+.github-item h3 {
   text-transform: capitalize;
   margin-bottom: 10px;
 }
