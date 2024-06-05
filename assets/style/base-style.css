@@ -10,18 +10,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.main-content {
-  max-width: 100vw;
-  max-height: 90vh;
-  /* overflow-y:scroll; */
-}
-
 /* .content {
   height: 100vh;
   border: 3px solid red;
   background-color: gray;
 } */
 
+body {
+  background: url(../data/bg-meteor.jpg) no-repeat;
+  background-size: cover;
+  transition: background 0.7s ease-in;
+}
+
 .fp-section {
   height: auto !important;
+}
+
+.fp-slidesNav ul {
+  text-align: center;
+}
+
+.fp-slidesNav ul li a.active > span,
+.fp-slidesNav ul li a > span:last-child {
+  background-color: white;
 }

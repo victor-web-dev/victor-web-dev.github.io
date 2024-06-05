@@ -13,6 +13,19 @@ const navBtnClick = () => {
   });
 };
 
+const scrollSection = (origin, direction, component, bgPosY = 33) => {
+  let pos = 0;
+  const { index } = origin;
+  if (direction === "down") {
+    pos += (index + 1) * bgPosY;
+    component.style.backgroundPositionY = `${pos}%`;
+  } else {
+    let prev = parseInt(component.style.backgroundPositionY.replace("%", ""));
+    pos = prev - bgPosY;
+    component.style.backgroundPositionY = `${pos}%`;
+  }
+};
+
 const initFullPage = () => {
   document.addEventListener("DOMContentLoaded", () => {
     new fullpage("#fullpage", {
@@ -101,6 +114,13 @@ const initFullPage = () => {
         enabled: true,
         label: "Made with fullPage.js",
         position: "right",
+      },
+
+      onLeave: function (origin, destination, direction, trigger) {
+        // let leavingSection = this;
+        const body = document.getElementById("body");
+
+        scrollSection(origin, direction, body);
       },
     });
   });

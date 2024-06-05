@@ -22,7 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"
       integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w=="
@@ -37,6 +37,7 @@
       referrerpolicy="no-referrer"
       defer
     ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="./main.js" defer></script>
     <script type="module" src="./js/about.js" defer></script>
     <script type="module" src="./js/projects.js" defer></script>
@@ -46,26 +47,33 @@
       @import url("https://fonts.googleapis.com/css2?family=Jersey+20&display=swap");
     </style>
   </head>
-  <body>
-    <header>
-      <nav class="navigator" aria-label="Header Navigation">
+  <body id="body">
+    <header class="relative">
+      <nav
+        class="flex justify-between fixed w-screen z-50 text-white bg-black/50 p-2"
+        aria-label="Header Navigation"
+      >
         <section class="burguer-menu">
           <input type="checkbox" class="menu-checkbox" checked="true" />
           <span class="lines" id="line1"></span>
           <span class="lines" id="line2"></span>
           <span class="lines" id="line3"></span>
         </section>
-        <ul class="nav-list" id="menu">
-          <li data-menuanchor="homePage" class="nav-item">
+        <div class="pl-14">
+          <h1>Victor Araujo</h1>
+        </div>
+
+        <ul class="pr-14 w-100 flex items-center justify-center" id="menu">
+          <li data-menuanchor="homePage" class="px-2">
             <a href="#home">Home</a>
           </li>
-          <li data-menuanchor="aboutPage" class="nav-item">
+          <li data-menuanchor="aboutPage" class="px-2">
             <a href="#about-section">About</a>
           </li>
-          <li data-menuanchor="projectsPage" class="nav-item">
+          <li data-menuanchor="projectsPage" class="px-2">
             <a href="#projects">Projects</a>
           </li>
-          <li data-menuanchor="contactPage" class="nav-item">
+          <li data-menuanchor="contactPage" class="px-2">
             <a href="#contact">Contact</a>
           </li>
         </ul>
