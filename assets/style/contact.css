@@ -3,10 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  background-image: url(../data/mario-bg.gif);
+  /* background-color: black; */
+  /* background-image: url(../data/mario-bg.gif);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .contact-form {

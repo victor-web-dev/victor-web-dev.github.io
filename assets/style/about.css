@@ -1,4 +1,4 @@
-#about-section div > section {
+/* #about-section div > section {
   background-image: url(../data/wave-bg.jpg);
   background-repeat: repeat-x;
   background-size: cover;
@@ -8,7 +8,7 @@
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   animation-timing-function: linear;
-}
+} */
 /* #about-section div > section:nth-child(2) {
   background-color: rgba(30, 39, 46, 1);
   background-image: url(../data/tech-bg.jpg);
@@ -36,7 +36,7 @@
   padding: 30%;
   /* color: #b0413e; */
   color: white;
-  background-color: rgba(0, 0, 0, 0.65);
+  /* background-color: rgba(0, 0, 0, 0.65); */
   flex-basis: fit-content;
   height: 100%;
   display: flex;

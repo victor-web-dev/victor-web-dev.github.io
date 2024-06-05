@@ -1,9 +1,9 @@
 #home {
-  background-color: #c5c7c0;
+  /* background-color: #c5c7c0; */
   overflow: hidden;
-  background-image: url(../gif/gif-background.gif);
+  /* background-image: url(../gif/gif-background.gif);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 #home section {
@@ -13,7 +13,7 @@
   justify-content: center;
   padding: 12%;
   height: 100vh;
-  background: rgba(34, 34, 34, 0.75); /* removes background focus */
+  /* background: rgba(34, 34, 34, 0.75); removes background focus */
 }
 
 #home section p {

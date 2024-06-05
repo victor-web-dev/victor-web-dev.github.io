@@ -1,8 +1,8 @@
 .projects {
   height: 100vh;
-  background-image: url(../data/mac-bg1.jpg);
+  /* background-image: url(../data/mac-bg1.jpg);
   background-size: cover;
-  background-position: 100% 100%;
+  background-position: 100% 100%; */
 }
 
 .projects h2 {
