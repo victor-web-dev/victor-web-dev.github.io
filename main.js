@@ -61,7 +61,7 @@ const initFullPage = () => {
       offsetSections: false,
       resetSliders: false,
       fadingEffect: false,
-      normalScrollElements: "#project-items-container",
+      // normalScrollElements: "#project-items-container",
       scrollOverflow: true,
       scrollOverflowMacStyle: false,
       scrollOverflowReset: false,
