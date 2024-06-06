@@ -37,10 +37,9 @@
       referrerpolicy="no-referrer"
       defer
     ></script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="./main.js" defer></script>
     <script type="module" src="./js/about.js" defer></script>
-    <script type="module" src="./js/projects.js" defer></script>
+    <!-- <script type="module" src="./js/projects.js" defer></script> -->
 
     <title>Victor Araujo - Portfolio</title>
     <style>
@@ -49,31 +48,28 @@
   </head>
   <body id="body">
     <header class="relative">
-      <nav
-        class="flex justify-between fixed w-screen z-50 text-white bg-black/50 p-2"
-        aria-label="Header Navigation"
-      >
+      <nav class="navigator" aria-label="Header Navigation">
         <section class="burguer-menu">
           <input type="checkbox" class="menu-checkbox" checked="true" />
           <span class="lines" id="line1"></span>
           <span class="lines" id="line2"></span>
           <span class="lines" id="line3"></span>
         </section>
-        <div class="pl-14">
+        <div class="nav-header">
           <h1>Victor Araujo</h1>
         </div>
 
-        <ul class="pr-14 w-100 flex items-center justify-center" id="menu">
-          <li data-menuanchor="homePage" class="px-2">
+        <ul class="" id="menu">
+          <li data-menuanchor="homePage" class="">
             <a href="#home">Home</a>
           </li>
-          <li data-menuanchor="aboutPage" class="px-2">
+          <li data-menuanchor="aboutPage" class="">
             <a href="#about-section">About</a>
           </li>
-          <li data-menuanchor="projectsPage" class="px-2">
+          <li data-menuanchor="projectsPage" class="">
             <a href="#projects">Projects</a>
           </li>
-          <li data-menuanchor="contactPage" class="px-2">
+          <li data-menuanchor="contactPage" class="">
             <a href="#contact">Contact</a>
           </li>
         </ul>
