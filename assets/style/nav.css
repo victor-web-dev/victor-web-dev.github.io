@@ -102,10 +102,21 @@
 
 @media screen and (max-width: 768px) {
   .navigator {
-    background-color: rgba(246, 247, 248, 0.7);
+    /* background-color: rgba(246, 247, 248, 0.7); */
     font-size: 1em;
     /* min-height: 100vh; */
     min-width: 100dvw;
+    /* justify-content: space-evenly;
+    align-items: baseline; */
+    position: relative;
+  }
+
+  .navigator ul {
+    display: none;
+  }
+
+  .nav-header {
+    padding: 1rem;
   }
 
   /* Hamburguer menu */
@@ -115,8 +126,10 @@
     justify-content: space-between;
     width: fit-content;
     height: fit-content;
-    position: relative;
-    padding: 20px;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    /* padding: 20px; */
     transition: transform 0.4s ease-in-out;
   }
 
