@@ -11,8 +11,56 @@
     />
     <link rel="stylesheet" href="./assets/style/base-style.css" />
     <title>Victor Araujo - Portfolio</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jersey+20&display=swap");
+      .fourZerofour {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 100dvh;
+        background-image: url(./assets/gif/ghostring-ragnarok.gif);
+        background-repeat: repeat-x;
+        background-position: 0% 100%;
+      }
+
+      .fourZerofour .firstHeader {
+        font-size: 10rem;
+      }
+
+      .fourZerofour .secondHeader {
+        font-size: 5rem;
+      }
+
+      .fourZerofour-container {
+        text-align: center;
+      }
+
+      .fourZerofour-container.btn-container a {
+        display: block;
+        width: fit-content;
+        margin-top: 2rem;
+      }
+
+      .fourZerofour-container a > button {
+        /* background-color: ; */
+        border: none;
+        border-radius: 50px;
+        padding: 1rem 2.5rem;
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <main></main>
+    <main class="fourZerofour">
+      <div class="fourZerofour-container">
+        <h1 class="firstHeader">404</h1>
+        <h2 class="secondHeader">Page not Found</h2>
+        <div class="btn-container">
+          <a href="./index.html"><button>Go Home!</button></a>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
