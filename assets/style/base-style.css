@@ -19,7 +19,7 @@
 body {
   background: url(../data/bg-meteor.jpg) no-repeat;
   background-size: cover;
-  transition: background 0.7s ease-in;
+  transition: background 1s ease-in;
 }
 
 .fp-section {
