@@ -144,14 +144,15 @@
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  list-style-image: url(../gif/poring-ragnarok.gif);
+  /* list-style-image: url(../gif/poring-ragnarok.gif); */
+  list-style: upper-roman;
 }
 
 #about-section .transferable-skills ul li {
   font-size: 1.5rem;
   padding: 20px;
 }
-
+/* 
 #about-section .transferable-skills ul li:nth-child(1) {
   list-style-image: url(../gif/arc-angeling-ragnarok.gif);
 }
@@ -174,4 +175,4 @@
 
 #about-section .transferable-skills ul li:nth-child(7) {
   list-style-image: url(../gif/santa-poring-ragnarok.gif);
-}
+} */
