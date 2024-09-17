@@ -6,7 +6,7 @@
   background-repeat: no-repeat; */
 }
 
-#home section {
+#home {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,47 +16,49 @@
   /* background: rgba(34, 34, 34, 0.75); removes background focus */
 }
 
-#home section p {
+#home h2 {
   font-size: 1.7rem;
-  color: #f4f4ff;
   letter-spacing: 12px;
-  text-shadow: -10px 0px 5px rgba(0, 0, 0, 0.5);
+  /* text-shadow: -10px 0px 5px rgba(0, 0, 0, 0.5); */
+  text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575;
 }
 
-#home section p:nth-of-type(1) {
+#home h2:nth-of-type(1) {
   animation-name: slide-left;
   animation-duration: 4s;
   animation-direction: alternate;
 }
 
-#home section p:nth-of-type(2) {
+#home h2:nth-of-type(2) {
   animation-name: appear;
   animation-duration: 7s;
   animation-direction: alternate;
 }
 
-#home section p span {
+#home h2 span {
   font-size: 4.5rem;
-  color: #b0413e;
+  color: #b3f20d;
 }
 
-#home section button {
+#home a {
   border-radius: 10px;
   margin-top: 15px;
   background-color: transparent;
   color: white;
-  border: 1px solid #b0413e;
   padding: 15px 50px;
+  border: 1px solid #b3f20d;
   animation-name: appear;
   animation-duration: 10s;
   animation-direction: alternate;
   transition: background 0.5s ease-in-out;
   cursor: pointer;
+  text-decoration: none;
 }
 
-#home section button:hover {
-  background-color: #b0413e;
+#home a:hover {
+  background-color: #b3f20d;
   border-color: white;
+  color: #4c0df2;
 }
 
 .main-btn {
@@ -112,22 +114,22 @@
     background-position: center;
   }
 
-  #home section p span {
+  #home p span {
     font-size: 3.2rem;
   }
 }
 
 @media screen and (max-width: 475px) {
-  #home section p span {
+  #home p span {
     font-size: 1.4rem;
   }
 
-  #home section p {
+  #home p {
     font-size: 0.8rem;
     text-wrap: nowrap;
   }
 
-  #home section button {
+  #home button {
     border-radius: 10px;
     margin-top: 15px;
     padding: 15px 25px;

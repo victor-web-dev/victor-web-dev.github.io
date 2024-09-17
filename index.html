@@ -37,8 +37,8 @@
       referrerpolicy="no-referrer"
       defer
     ></script>
-    <script type="module" src="./main.js" defer></script>
-    <script type="module" src="./js/about.js" defer></script>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/about.js"></script>
     <!-- <script type="module" src="./js/projects.js" defer></script> -->
 
     <title>Victor Araujo - Portfolio</title>
@@ -67,12 +67,12 @@
             <a href="#contact">Contact</a>
           </li>
         </ul>
-        <section class="burguer-menu">
-          <input type="checkbox" class="menu-checkbox" checked="true" />
+        <div class="burguer-menu">
+          <input type="checkbox" class="menu-checkbox" />
           <span class="lines" id="line1"></span>
           <span class="lines" id="line2"></span>
           <span class="lines" id="line3"></span>
-        </section>
+        </div>
       </nav>
     </header>
 
@@ -80,42 +80,39 @@
       <div id="fullpage">
         <div class="section active">
           <section class="" id="home">
-            <article>
-              <section>
-                <p><span>Hello!</span>I'm Victor;</p>
-                <p>Web <span>Developer;</span></p>
-                <div class="main-btn">
-                  <a href="https://www.linkedin.com/in/veofa/" target="_blank">
-                    <button class="linkedin-btn">LinkedIn</button>
-                  </a>
-                  <!-- <span>OR</span> -->
-                  <a
-                    href="./assets/data/Resume-for-internet.pdf"
-                    download="resume"
-                  >
-                    <button>Download CV</button>
-                  </a>
-                </div>
-              </section>
-            </article>
+            <h2><span>Hello!</span>I'm Victor;</h2>
+            <h2>Web <span>Developer</span>;</h2>
+            <div class="main-btn">
+              <a
+                href="https://www.linkedin.com/in/veofa/"
+                target="_blank"
+                class="linkedin-btn"
+              >
+                LinkedIn
+              </a>
+
+              <a href="./assets/data/Resume-for-internet.pdf" download="resume">
+                Download CV
+              </a>
+            </div>
           </section>
         </div>
         <!-- about  -->
         <div class="section">
-          <section id="about-section">
+          <div id="about-section">
             <div class="slide" data-anchor="slide1">
               <section class="briefing" aria-label="small briefing">
-                <article>
-                  <p>
+                <div>
+                  <h2>
                     Into software development since 2015, got into Web
                     development in 2021.
-                  </p>
+                  </h2>
                   <p>Always passionate about I.T</p>
                   <p>
                     A flexible person who can adapt and learn new tools to solve
                     problems.
                   </p>
-                </article>
+                </div>
               </section>
             </div>
             <div class="slide" data-anchor="slide2">
@@ -137,42 +134,19 @@
                 </article>
               </section>
             </div>
-            <div class="slide" data-anchor="slide3">
-              <section
-                class="transferable-skills"
-                aria-label="transferable-skills"
-              >
-                <article class="transferable-skills-article">
-                  <div>
-                    <h2>Transferable Skills</h2>
-                  </div>
-
-                  <div>
-                    <ul>
-                      <li>Calm</li>
-                      <li>Flexible</li>
-                      <li>Cooperative</li>
-                      <li>Rational</li>
-                      <li>Open-Minded</li>
-                      <li>Exploring</li>
-                      <li>Pratical</li>
-                    </ul>
-                  </div>
-                </article>
-              </section>
-            </div>
-          </section>
+          </div>
         </div>
         <!-- projects -->
         <div class="section">
           <section class="projects" id="projects">
             <h2>Projects</h2>
-            <div id="project-items-container"></div>
+            <div class="projects-container"></div>
           </section>
         </div>
         <!-- contact -->
         <div class="section">
           <section class="contact" id="contact">
+            <h2>Contact</h2>
             <form
               class="contact-form"
               action="mailto:victoremanuel122@gmail.com"
@@ -212,7 +186,6 @@
               <div>
                 <textarea
                   name="body"
-                  id=""
                   placeholder="Message me!"
                   required
                 ></textarea>

@@ -1,18 +1,3 @@
-const navBtnClick = () => {
-  const checkbox = document.querySelector(".menu-checkbox");
-  const navItem = document.querySelectorAll(".nav-item");
-
-  checkbox.addEventListener("change", (event) => {
-    if (!event.target.checked) {
-      navItem.forEach(
-        (element) => (element.className = "nav-item display-none")
-      );
-    } else {
-      navItem.forEach((element) => (element.className = "nav-item"));
-    }
-  });
-};
-
 const scrollSection = (origin, direction, component, bgPosY = 33) => {
   let pos = 0;
   const { index } = origin;
@@ -127,7 +112,6 @@ const initFullPage = () => {
 };
 
 const exec = () => {
-  // navBtnClick();
   initFullPage();
 };
 

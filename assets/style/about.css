@@ -32,7 +32,7 @@
   height: 100vh;
 }
 
-#about-section .briefing article {
+#about-section .briefing div {
   padding: 30%;
   /* color: #b0413e; */
   color: white;
@@ -45,15 +45,19 @@
   align-items: center;
 }
 
-#about-section .briefing article p {
+#about-section .briefing div p,
+#about-section .briefing div h2 {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575,
-    1px 5px 15px #b0413e, 1px 5px 70px #b0413e, 1px 5px 15px #b0413e;
+  text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575;
 }
 
-#about-section .briefing article p:nth-child(2) {
+#about-section .briefing div h2::first-letter {
+  color: #b3f20d;
+}
+
+#about-section .briefing div p:nth-child(2) {
   padding: 20px 0;
 }
 
@@ -100,17 +104,16 @@
 
 #about-section .technologies > article h2 {
   font-size: 2rem;
-  text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575,
-    1px 5px 15px #b0413e, 1px 5px 70px #b0413e, 1px 5px 15px #b0413e;
+  text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575;
 }
 
 #about-section .technologies > article h3 {
   font-size: 1.2rem;
-  text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575,
-    1px 5px 15px #b0413e, 1px 5px 70px #b0413e, 1px 5px 15px #b0413e;
+  color: #b3f20d;
+  text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575;
 }
 
-/* Section 3 */
+/* Section 3
 
 #about-section .transferable-skills {
   height: 100vh;
@@ -129,7 +132,7 @@
 #about-section .transferable-skills > article {
   height: 100%;
   width: 100%;
-  /* background-color: rgba(0, 0, 0, 0.65); */
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 #about-section .transferable-skills h2 {
@@ -145,14 +148,14 @@
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  /* list-style-image: url(../gif/poring-ragnarok.gif); */
+  list-style-image: url(../gif/poring-ragnarok.gif);
   list-style: upper-roman;
 }
 
 #about-section .transferable-skills ul li {
   font-size: 1.5rem;
   padding: 20px;
-}
+} */
 /* 
 #about-section .transferable-skills ul li:nth-child(1) {
   list-style-image: url(../gif/arc-angeling-ragnarok.gif);
@@ -179,7 +182,7 @@
 } */
 
 @media screen and (max-width: 768px) {
-  #about-section .briefing article p {
+  #about-section .briefing div p {
     font-size: 1.2rem;
     width: 40ch;
   }
@@ -230,14 +233,12 @@
 
   #about-section .technologies > article h2 {
     font-size: 2rem;
-    text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575,
-      1px 5px 15px #b0413e, 1px 5px 70px #b0413e, 1px 5px 15px #b0413e;
+    text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575;
   }
 
   #about-section .technologies > article h3 {
     font-size: 1.2rem;
-    text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575,
-      1px 5px 15px #b0413e, 1px 5px 70px #b0413e, 1px 5px 15px #b0413e;
+    text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575;
   }
 }
 
