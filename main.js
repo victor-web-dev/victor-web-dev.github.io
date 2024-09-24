@@ -113,6 +113,47 @@ const initFullPage = () => {
 
 const exec = () => {
   initFullPage();
+  (async () => {
+    await loadFireflyPreset(tsParticles);
+
+    await tsParticles.load({
+      id: "tsparticles",
+      options: {
+        preset: "firefly",
+        background: {
+          color: "#FFFFF",
+        },
+        particles: {
+          number: {
+            value: 10,
+            limit: 50,
+          },
+          size: {
+            value: 2,
+          },
+          shape: {
+            type: ["star", "circle"],
+          },
+          move: {
+            inverse: true,
+          },
+          color: {
+            value: "random",
+          },
+        },
+      },
+    });
+
+    // await tsParticles.load({
+    //   id: "tsparticles",
+    //   options: {
+    //     preset: "snow",
+    //     background: {
+    //       color: "#FFFFF",
+    //     },
+    //   },
+    // });
+  })();
 };
 
 exec();
