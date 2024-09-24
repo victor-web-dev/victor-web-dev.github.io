@@ -3,80 +3,46 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   /* background-color: black; */
   /* background-image: url(../data/mario-bg.gif);
   background-repeat: no-repeat;
   background-size: cover; */
 }
 
-.contact-form {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "names names"
-    "email email"
-    "textarea textarea"
-    "btn btn";
-  row-gap: 20px;
-  width: 550px;
-  padding: 20px;
-  border: 1px solid white;
-  border-radius: 10px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.8);
+.contact > h2 {
+  padding: 30px 50px;
+  font-size: 3rem;
+  text-align: center;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact .contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
+  height: 80%;
+  padding: 0 25%;
 }
 
-.contact-form textarea {
-  height: 100px;
-  min-height: 50px;
-  max-height: 250px;
-  resize: vertical;
+.contact .contact-content article:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 55%;
+  width: 40ch;
 }
 
-.contact-form div:nth-child(1),
-.contact-form div:nth-child(2) {
-  grid-area: names;
+.contact .contact-content article:nth-child(2) div:first-child p,
+.contact .contact-content article:nth-child(2) div:first-child p span {
+  font-size: 1.3rem;
 }
 
-.contact-form div:nth-child(1) {
-  justify-self: flex-start;
-}
-.contact-form div:nth-child(2) {
-  justify-self: flex-end;
+.contact .contact-content div {
+  padding: 20px 0;
 }
 
-.contact-form div:nth-child(3) {
-  grid-area: email;
-}
-.contact-form div:nth-child(4) {
-  grid-area: textarea;
-}
-
-.contact-form div:nth-child(5) {
-  grid-area: btn;
-  justify-self: self-start;
-}
-
-.contact-form label {
-  display: block;
-}
-
-.contact-form button {
-  padding: 10px 40px;
-  cursor: pointer;
-  border-radius: 5px;
-  border: none;
-  background-color: white;
-  transition: background 0.2s ease-in-out;
-}
-
-.contact-form button:hover {
-  color: white;
-  background-color: #b0413e;
+.contact .contact-content h3 {
+  font-size: 1.5rem;
 }

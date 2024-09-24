@@ -37,6 +37,7 @@
       referrerpolicy="no-referrer"
       defer
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-firefly@3/tsparticles.preset.firefly.bundle.min.js"></script>
     <script type="module" src="./main.js"></script>
     <script type="module" src="./js/about.js"></script>
     <!-- <script type="module" src="./js/projects.js" defer></script> -->
@@ -76,7 +77,7 @@
       </nav>
     </header>
 
-    <main class="main-content">
+    <main class="main-content" id="tsparticles">
       <div id="fullpage">
         <div class="section active">
           <section class="" id="home">
@@ -100,7 +101,7 @@
         <!-- about  -->
         <div class="section">
           <div id="about-section">
-            <div class="slide" data-anchor="slide1">
+            <div class="" data-anchor="">
               <section class="briefing" aria-label="small briefing">
                 <div>
                   <h2>
@@ -115,7 +116,7 @@
                 </div>
               </section>
             </div>
-            <div class="slide" data-anchor="slide2">
+            <div class="" data-anchor="">
               <section class="technologies" aria-label="technologies">
                 <article>
                   <h2>Technologies</h2>
@@ -147,53 +148,30 @@
         <div class="section">
           <section class="contact" id="contact">
             <h2>Contact</h2>
-            <form
-              class="contact-form"
-              action="mailto:victoremanuel122@gmail.com"
-              enctype="text/plain"
-              method="get"
-            >
-              <div>
-                <label for="name">Name</label>
-                <input
-                  type="text"
-                  name="subject"
-                  id="name"
-                  placeholder="John"
-                  required
-                />
-              </div>
-              <div>
-                <label for="lastName">Last name</label>
-                <input
-                  type="text"
-                  name="subject"
-                  id="lastName"
-                  placeholder="Doe"
-                  required
-                />
-              </div>
-              <div>
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="email@email.com"
-                  required
-                />
-              </div>
-              <div>
-                <textarea
-                  name="body"
-                  placeholder="Message me!"
-                  required
-                ></textarea>
-              </div>
-              <div>
-                <button type="submit">Send</button>
-              </div>
-            </form>
+            <div class="contact-content">
+              <article>
+                <img src="./assets/gif/arc-angeling-ragnarok.gif" alt="" />
+              </article>
+              <article>
+                <div>
+                  <p>
+                    Got a brilliant idea, a tricky question, or just want to
+                    send me cat memes?
+                    <span style="color: #b3f20d">Here's how!</span>
+                  </p>
+                </div>
+                <div>
+                  <h3>Connect!</h3>
+                  <p>
+                    <a href="https://www.linkedin.com/in/veofa/">LinkedIn</a>
+                  </p>
+                </div>
+                <div>
+                  <h3>Send an Email!</h3>
+                  <p style="color: #b3f20d">victoremanuel122@gmail.com</p>
+                </div>
+              </article>
+            </div>
           </section>
         </div>
       </div>
