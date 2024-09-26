@@ -58,8 +58,8 @@
 }
 
 .navigator ul li a:hover {
-  color: #f24c0d;
-  border-bottom: 1px solid #f24c0d;
+  color: #b3f20d;
+  border-bottom: 1px solid #b3f20d;
 }
 
 /* if the navigator link doesn't keep the effect, remember to delete lines 41 & 42 */
