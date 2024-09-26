@@ -18,9 +18,9 @@ const initFullPage = () => {
       // Navigation
       // menu: "#menu",
       lockAnchors: false,
-      // anchors: ["homePage", "aboutPage", "projectsPage", "contactPage"],
-      // navigation: true,
-      // navigationPosition: "right",
+      anchors: ["contactPage"],
+      navigation: false,
+      navigationPosition: "right",
       // navigationTooltips: ["firstSlide", "secondSlide"],
       showActiveTooltip: false,
       slidesNavigation: true,
@@ -113,6 +113,15 @@ const initFullPage = () => {
 
 const exec = () => {
   initFullPage();
+
+  document.getElementById("contact-anchor").addEventListener("click", () => {
+    fullpage_api.moveTo(4);
+  });
+
+  document.getElementById("page-nav-header").addEventListener("click", () => {
+    fullpage_api.moveTo(1);
+  });
+
   (async () => {
     await loadFireflyPreset(tsParticles);
 
