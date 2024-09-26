@@ -26,18 +26,11 @@ const fillContainer = async () => {
   } else {
     div.innerHTML = "";
     github.data.forEach((el) => {
-      div.innerHTML += `<a class="github-item" href="${el.html_url}">
+      div.innerHTML += `<div class="github-card">
         <div>
-            <h3>${el.name}</h3>
+            <a href="${el.html_url}" target="_blank" rel="noopener noreferrer">${el.name}</a>
         </div>
-        <div>
-            <p>Language: ${el.language}</p>
-            <p>Visibility: ${el.visibility}</p>
-            <p>${
-              el.description !== null ? "Description: " + el.description : ""
-            }</p>
-        </div>
-    </a>`;
+    </div>`;
     });
     return;
   }
