@@ -134,7 +134,7 @@ const exec = () => {
         },
         particles: {
           number: {
-            value: 30,
+            value: 50,
             limit: 50,
             // density: {
             //   enable: true,
