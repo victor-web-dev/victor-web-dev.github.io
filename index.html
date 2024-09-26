@@ -40,7 +40,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-firefly@3/tsparticles.preset.firefly.bundle.min.js"></script>
     <script type="module" src="./main.js"></script>
     <script type="module" src="./js/about.js"></script>
-    <!-- <script type="module" src="./js/projects.js" defer></script> -->
+    <script type="module" src="./js/projects.js" defer></script>
 
     <title>Victor Araujo - Portfolio</title>
     <style>
@@ -76,8 +76,9 @@
             <h2>Web <span>Developer</span>;</h2>
             <div class="main-btn">
               <a
-                href="https://www.linkedin.com/in/veofa/"
+                href="https://bit.ly/veofa"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="linkedin-btn"
               >
                 LinkedIn
@@ -130,17 +131,21 @@
         <!-- projects -->
         <div class="section">
           <section class="projects" id="projects">
-            <h2>Projects</h2>
-            <div class="projects-container"></div>
+            <h2>Public Github Repos</h2>
+            <div class="projects-container" id="project-items-container"></div>
           </section>
         </div>
         <!-- contact -->
         <div class="section">
           <section class="contact" id="contact">
-            <h2>Contact</h2>
+            <!-- <h2>Contact</h2> -->
             <div class="contact-content">
               <article>
-                <img src="./assets/gif/arc-angeling-ragnarok.gif" alt="" />
+                <div id="contact-img-container">
+                  <img src="./assets/img/001.png" alt="" />
+                  <img src="./assets/img/002.png" alt="" />
+                  <img src="./assets/img/003.png" alt="" />
+                </div>
               </article>
               <article>
                 <div>
@@ -152,9 +157,33 @@
                 </div>
                 <div>
                   <h3>Connect!</h3>
-                  <p>
-                    <a href="https://www.linkedin.com/in/veofa/">LinkedIn</a>
-                  </p>
+                  <div>
+                    <div>
+                      <a
+                        href="https://bit.ly/veofa"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Linkedin logo"
+                        ><img
+                          width="15%"
+                          src="https://www.freeiconspng.com/uploads/linkedin-logo-1.png"
+                          width="100"
+                          alt="Linkedin Logo"
+                      /></a>
+                    </div>
+                    <div>
+                      <a
+                        href="https://bit.ly/3w2yhIh"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Github logo"
+                        ><img
+                          width="15%"
+                          title="Github"
+                          src="https://img.icons8.com/color/100/000000/github--v3.png"
+                      /></a>
+                    </div>
+                  </div>
                 </div>
                 <div>
                   <h3>Send an Email!</h3>
