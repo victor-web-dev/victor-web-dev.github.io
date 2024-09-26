@@ -125,8 +125,12 @@ const exec = () => {
         },
         particles: {
           number: {
-            value: 10,
+            value: 30,
             limit: 50,
+            // density: {
+            //   enable: true,
+            //   height: 800,
+            // },
           },
           size: {
             value: 2,
@@ -139,6 +143,15 @@ const exec = () => {
           },
           color: {
             value: "random",
+          },
+        },
+        interactivity: {
+          detectsOn: "window",
+          events: {
+            onHover: {
+              enable: true,
+              mode: "repulse",
+            },
           },
         },
       },
