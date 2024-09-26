@@ -1,27 +1,15 @@
-/* #about-section div > section {
-  background-image: url(../data/wave-bg.jpg);
-  background-repeat: repeat-x;
-  background-size: cover;
-  transition: all ease-in-out;
-  animation-name: moving-bg;
-  animation-duration: 240s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-timing-function: linear;
-} */
-/* #about-section div > section:nth-child(2) {
-  background-color: rgba(30, 39, 46, 1);
-  background-image: url(../data/tech-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+#about-section {
+  height: 100vh;
+}
 
-/* #about-section div > section:nth-child(3) {
-  background-color: black;
-  background-image: url(../data/tech-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+#about-section .about-section-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 
 #about-section .briefing {
   display: flex;
@@ -29,11 +17,12 @@
   align-items: center;
   text-align: center;
   overflow: hidden;
-  height: 100vh;
+  padding: 5%;
+  width: 90ch;
 }
 
 #about-section .briefing div {
-  padding: 30%;
+  /* padding: 30%; */
   /* color: #b0413e; */
   color: white;
   /* background-color: rgba(0, 0, 0, 0.65); */
@@ -77,17 +66,25 @@
   align-items: center;
   justify-content: center;
   color: white;
-  height: 100dvh;
+  /* height: 100dvh; */
+}
+
+#about-section .technologies article h3::first-letter {
+  color: #b3f20d;
 }
 
 #about-section .technologies .logo {
   height: 100px;
   width: 100px;
-  transition: width 0.2s ease-in-out;
+  transition: filter 0.7s ease-in-out;
+}
+
+#about-section .technologies .logo {
+  filter: grayscale(100%);
 }
 
 #about-section .technologies .logo:hover {
-  filter: grayscale(100%);
+  filter: grayscale(0%);
 }
 
 #about-section .technologies > article {
@@ -103,83 +100,16 @@
 }
 
 #about-section .technologies > article h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575;
+  color: #b3f20d;
 }
 
 #about-section .technologies > article h3 {
   font-size: 1.2rem;
-  color: #b3f20d;
+  /* color: #b3f20d; */
   text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575;
 }
-
-/* Section 3
-
-#about-section .transferable-skills {
-  height: 100vh;
-}
-
-#about-section .transferable-skills,
-#about-section .transferable-skills-article {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  color: white;
-  text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575,
-    1px 5px 15px #b0413e, 1px 5px 70px #b0413e, 1px 5px 15px #b0413e;
-}
-#about-section .transferable-skills > article {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.65);
-}
-
-#about-section .transferable-skills h2 {
-  font-size: 2rem;
-}
-
-#about-section .transferable-skills ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 50%;
-  width: 60%;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  list-style-image: url(../gif/poring-ragnarok.gif);
-  list-style: upper-roman;
-}
-
-#about-section .transferable-skills ul li {
-  font-size: 1.5rem;
-  padding: 20px;
-} */
-/* 
-#about-section .transferable-skills ul li:nth-child(1) {
-  list-style-image: url(../gif/arc-angeling-ragnarok.gif);
-}
-
-#about-section .transferable-skills ul li:nth-child(3) {
-  list-style-image: url(../gif/ragnarok-jejeling.gif);
-}
-
-#about-section .transferable-skills ul li:nth-child(4) {
-  list-style-image: url(../gif/deviling-ragnarok.gif);
-}
-
-#about-section .transferable-skills ul li:nth-child(5) {
-  list-style-image: url(../gif/angeling-ragnarok.gif);
-}
-
-#about-section .transferable-skills ul li:nth-child(6) {
-  list-style-image: url(../gif/ghostring-ragnarok.gif);
-}
-
-#about-section .transferable-skills ul li:nth-child(7) {
-  list-style-image: url(../gif/santa-poring-ragnarok.gif);
-} */
 
 @media screen and (max-width: 768px) {
   #about-section .briefing div p {
