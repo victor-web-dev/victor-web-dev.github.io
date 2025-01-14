@@ -44,9 +44,6 @@ export const mostUsedIcons = [
     src: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-kanban-agile-flaticons-lineal-color-flat-icons-2.png",
     alt: "Kanban Logo",
   },
-];
-
-export const lessUsedIcons = [
   {
     title: "Docker",
     src: "https://img.icons8.com/dusk/128/docker.png",

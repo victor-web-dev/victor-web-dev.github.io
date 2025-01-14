@@ -105,75 +105,11 @@
   color: #b3f20d;
 }
 
-#about-section .technologies > article h3 {
-  font-size: 1.2rem;
-  /* color: #b3f20d; */
-  text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575;
-}
-
-@media screen and (max-width: 768px) {
-  #about-section .briefing div p {
-    font-size: 1.2rem;
-    width: 40ch;
-  }
-
-  /* section 2 */
-
-  #about-section .technologies {
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    */
-    height: auto;
-    text-align: center;
-  }
-
-  #about-section .technologies .logo {
-    height: 70px;
-    width: 70px;
-    transition: width 0.2s ease-in-out;
-  }
-
-  #about-section .technologies .logo:hover {
-    filter: grayscale(100%);
-  }
-
-  #about-section .technologies > article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* gap: 1rem; */
-    height: 100%;
-    width: 100%;
-    flex-wrap: wrap;
-    /* background-color: rgba(0, 0, 0, 0.65); */
-  }
-
-  #about-section .technologies .most-used-tech-container,
-  #about-section .technologies > article h2 {
-    padding-bottom: 2rem;
-  }
-
-  #about-section .technologies #most-used-tech,
-  #about-section .technologies #less-used-tech {
-    width: 20ch;
-  }
-
-  #about-section .technologies > article h2 {
-    font-size: 2rem;
-    text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575;
-  }
-
-  #about-section .technologies > article h3 {
-    font-size: 1.2rem;
-    text-shadow: 1px 1px 1px #757575, 1px 2px 1px #757575, 1px 3px 1px #757575;
-  }
-}
-
-@media screen and (max-width: 468px) {
-  #about-section .briefing article p {
-    width: 20ch;
-  }
+#known-tech {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 60ch;
 }
