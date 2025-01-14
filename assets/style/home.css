@@ -1,18 +1,11 @@
 #home {
-  /* background-color: #c5c7c0; */
-  overflow: hidden;
-  /* background-image: url(../gif/gif-background.gif);
-  background-size: cover;
-  background-repeat: no-repeat; */
-}
-
-#home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 12%;
   height: 100vh;
+  overflow: hidden;
   /* background: rgba(34, 34, 34, 0.75); removes background focus */
 }
 
@@ -101,33 +94,3 @@
   }
 }
 /* Media Queries */
-
-@media screen and (max-width: 768px) {
-  #home {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  #home p span {
-    font-size: 3.2rem;
-  }
-}
-
-@media screen and (max-width: 475px) {
-  #home p span {
-    font-size: 1.4rem;
-  }
-
-  #home p {
-    font-size: 0.8rem;
-    text-wrap: nowrap;
-  }
-
-  #home button {
-    border-radius: 10px;
-    margin-top: 15px;
-    padding: 15px 25px;
-    text-wrap: nowrap;
-  }
-}
