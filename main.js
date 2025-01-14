@@ -115,11 +115,16 @@ const exec = () => {
   initFullPage();
 
   document.getElementById("contact-anchor").addEventListener("click", () => {
+    const body = document.getElementById("body");
     fullpage_api.moveTo(4);
+
+    body.style.backgroundPositionY = "99%";
   });
 
   document.getElementById("page-nav-header").addEventListener("click", () => {
+    const body = document.getElementById("body");
     fullpage_api.moveTo(1);
+    body.style.backgroundPositionY = "0%";
   });
 
   (async () => {
